@@ -1,0 +1,127 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #blue;
+}
+/* Estilizando o contêiner do slideshow */
+[data-component="slideshow"] {
+  width: 100%; /* O slideshow ocupa toda a largura da página */
+  max-width: 5000px; /* Largura máxima para telas maiores */
+  height: 400px; /* Altura fixa do slideshow */
+  margin: auto; /* Centraliza horizontalmente */
+  overflow: hidden; /* Oculta o conteúdo extra */
+  position: relative;
+  background-color: #f4f4f4; /* Cor de fundo opcional */
+}
+
+/* Estilizando cada slide */
+[data-component="slideshow"] .slide {
+  display: none; /* Apenas o slide ativo é visível */
+  text-align: center;
+  width: 100%; /* Cada slide ocupa toda a largura do contêiner */
+  height: 100%; /* Cada slide ocupa toda a altura do contêiner */
+  position: absolute; /* Garante que os slides se sobreponham */
+  top: 0;
+  left: 0;
+}
+
+/* Slide ativo */
+[data-component="slideshow"] .slide.active {
+  display: block; /* Exibe apenas o slide ativo */
+}
+
+/* Imagens do slideshow */
+[data-component="slideshow"] .slide img {
+  width: 100%; /* Faz a imagem ocupar toda a largura do slide */
+  height: 100%; /* Faz a imagem ocupar toda a altura do slide */
+  object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorção */
+}
+
+
+/* Cabeçalho */
+header {
+    background-color: #blue;
+    color: #blue;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #F39C12;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 5.3em;
+    font-family: Times New Roman;
+}
+header h2 {
+    margin: 0;
+    font-size: 2.2em;
+    font-family: Times New Roman;
+    color: mediumaquamarine;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Menu */
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #777;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    font-size: 1.5em;
+    color: #F39C12;
+    font-weight: 600;
+}
+.menu-item .price1 {
+    font-size: 1.5em;
+    color: #FF6633 ;
+    font-weight: 600;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1E3D58;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
